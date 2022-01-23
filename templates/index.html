@@ -1,0 +1,984 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+
+    <link rel="icon" type="image/png" href="/static/img/fav.png">
+
+    <link type="text/css" rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+
+    <link href="static/css/bootstrap-table.min.css" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <!-- Animation Css -->
+    <link rel="stylesheet" href="static/css/animate.css">
+
+
+    <title>Skillvet Privacy Tool</title>
+    <!-- Bootstrap core CSS -->
+    <script type="text/javascript" src="static/js/main.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <section id="promo" class="promo section offset-header ">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title wow fadeInDownBig">Skill<span class="highlight">Vet</span></h2>
+                        <p class="intro wow fadeInLeftBig animated" data-wow-duration="1s">Simplifying the Understanding of Data Disclosure Practices in AI Assistants for everyone</p><br>
+                    </div>
+                </div>
+
+                <!-- <img src="static/img/KCL.png" class="d-inline-block align-left" style="width:20px;margin-top:-5px; "> King's College London, <img src="static/img/ICO.png" class="d-inline-block align-left" style="width:20px;margin-top:-10px; "> ICO funded -->
+                <ul class="meta list-inline">
+                    <li class="list-inline-item" style="margin: 1em;">
+                        <a class="btn btn-info" href="#about">
+                            <h4>
+                                <strong>What’s Skillvet</strong>
+                            </h4>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" style="margin: 1em;">
+                        <a class="btn btn-info" href="#explorethedata">
+                            <h4>
+                                <strong>Explore Alexa Skills</strong>
+                            </h4>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" style="margin: 1em;">
+                        <a class="btn btn-info" href="#explorethetraceability">
+                            <h4>
+                                <strong>Explore Skills Traceability</strong>
+                            </h4>
+                        </a>
+                    </li>
+                    <li class="list-inline-item" style="margin: 1em;">
+                        <a class="btn btn-info" href="#Traceability">
+                            <h4><strong>Check Traceability</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+                <!--//meta-->
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <div id="about" class="about section">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <h1 class="display-2"> What is Skillvet?</h1>
+
+                    <p class="lead"><b>Skillvet</b> is a privacy tool that help identifies potential privacy issues by analysing the traceability between the permissions and developers' data practices. It recognises relevant policy statements and assesses the traceability,
+                        classifying them as <a href="#complete">complete</a>, <a href="#partial">partial</a>, or <a href="#broken">broken</a>. Skillvet, is based on machine learning and natural language processing.
+                    </p>
+
+                    <div class="row ">
+                        <div class="item col-lg-4 col-md-6 col-12 ">
+                            <div class="icon-holder ">
+                                <i class="fas fa-tools "></i>
+                            </div>
+                            <div class="content wow fadeInLeftBig">
+                                <h3 class="sub-title ">Designed for developers</h3>
+                                <p>Developers can use this to write better privacy policy documents with relevant data practices.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="item col-lg-4 col-md-6 col-12 ">
+                            <div class="icon-holder ">
+                                <i class="fas fa-users-cog "></i>
+                            </div>
+                            <div class="content wow fadeInDown">
+                                <h3 class="sub-title ">Designed for Users</h3>
+                                <p>Users can use skillvet to quickly understand the data practices disclose in a privacy policy to make better decision about their data.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="item col-lg-4 col-md-6 col-12 ">
+                            <div class="icon-holder ">
+                                <i class="fas fa-crosshairs "></i>
+                            </div>
+                            <div class="content wow fadeInRight ">
+                                <!-- <h3 class="sub-title ">UX-centred</h3>
+                                <p>Clear, concise, familiar, attractive and efficient user interface </p>
+                            </div> -->
+                                <h3 class="sub-title">Designed for Regulators</h3>
+                                <p>Regulators can use skillvet to better understand the data practices disclose in a privacy policy to detect skills that violate existing regulation.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="clearfix visible-md  "></div>
+                        <div class="item col-lg-4 col-md-6 col-12 ">
+                            <div class="icon-holder ">
+                                <i class="fas fa-mobile-alt "></i>
+                            </div>
+                            <div class="content wow fadeInLeftBig">
+                                <h3 class="sub-title ">Mobile-friendly</h3>
+                                <p>Performs well on mobile devices shrinking down to appropriate size good enough to display on a mobile device . </p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="item col-lg-4 col-md-6 col-12 ">
+                            <div class="icon-holder ">
+                                <i class="fas fa-code "></i>
+                            </div>
+                            <div class="content wow fadeInUp">
+                                <h3 class="sub-title ">Easy to Use</h3>
+                                <p>Support multiple file formats allowing users and developers to upload their documents without conversion.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//item-->
+                        <div class="item col-lg-4 col-md-6 col-12 ">
+                            <div class="icon-holder ">
+                                <i class="fas fa-coffee "></i>
+                            </div>
+                            <div class="content wow fadeInRight">
+                                <h3 class="sub-title ">Source files included</h3>
+                                <p>Links to the source file included to allow customization and better integration with multiple platforms.</p>
+                            </div>
+                            <!--//content-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-info">
+                <p class="font-italic font-weight-light">
+                    Note that Skillvet supports text and multiple privacy policy file extensions- pdf, txt, docx, jpeg, jpg, gif, HTML, and png. More coming soon.</p>
+
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="section" id="Documentation">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-3">How it Works</h2>
+                </div>
+            </div>
+
+            <p>
+
+                Third-party software, or skills, are essential components in Smart Personal Assistants (SPA). The number of skills has snowballed in a few years. Skills can access personal information, and this may pose a risk to users. Skillvet helps to simplify the
+                understanding of data disclosure practices in this ecosystem.
+
+            </p>
+
+            <p>The type of traceability is identified by comparing the permissions requested by the third-party software obvious to the user with the data practices found in third-party software privacy policy document. The different traceability types are
+                explained next:
+            </p>
+
+
+            <h3 id="complete">Complete Traceability</h3>
+            <p>A third-party software is said to offer complete traceability if it provides adequate information in its privacy policy document about its data practices, i.e., the data action defined in the privacy policy document can be completely mapped
+                to the access of data permissions. For instance, a third-party software with the statement "We use your device's address to find your location and search for aircraft around you'' in its privacy policy offers complete traceability if it
+                requested device address permission. The statement acknowledged that the third-party software access device address.</p>
+
+            <h3 id="partial">Partial Traceability</h3>
+            <p>This occur when the transparency of data action defined in the privacy policy document maps partially to the access permissions. For example, when the privacy document states that a skill collects personally identifiable information without
+                explicitly stating what this information is. A statement such as “we may require you to provide us with certain personally identifiable information'' offers partial traceability since it does not explicitly state what information is collected.
+            </p>
+            <div class="tohide hidden">
+                <p> A skill is also said to offer partial traceability if not all its data permissions are covered in its privacy document. Partial disclosure of data practices may also occur when data practices in a skill privacy document are not well mapped
+                    with the skill's data permission. For instance, the statement "we may also collect your zip code" is partially traceable if the skills collect device address, as this refers to the user's full address, including the zip code and the
+                    street number.
+                </p>
+            </div>
+            <div class="toggle">+ show more</div>
+
+            <h3 id="broken">Broken Traceability</h3>
+            <p> This happens when a skill requests for permissions but does not have a privacy policy or the link to the privacy policy given is not working. We consider the traceability broken. Even when providing a privacy policy, third-party software has
+                broken traceability if it provides no data implication in its privacy policy document. </p>
+            <div class="tohide hidden">
+                <p> instance, when a skill collects the device address, and its privacy document states nothing related to device address, we mark such skill data disclosure as broken. We only mark a broken policy when permissions are not traceable to the
+                    data practices defined in the privacy document.</p>
+
+                <p>Note: When analyzing traceability, a skill requesting "Device Country and Postal Code" permission is tagged to have adequately disclosed its data practices if "Device Address" is mentioned in the privacy policy. This is because "Device
+                    Address"  refers to the user's full address, including the device country and postal code and the street number.
+                </p>
+
+                <h3 id="publications">Publications</h3>
+                <ul>
+                    <p>Here are the list of documents related to Skillvet.</p>
+                    <li>
+                        Jide S. Edu, Jose M. Such, and Guillermo Suarez-Tangil. 2020. Smart Home Personal Assistants: A Security and Privacy Review. ACM Comput. Surv. 53, 6, Article 116 (December 2020), 36 pages. DOI:https://doi.org/10.1145/3412383.
+
+                    </li>
+                </ul>
+                <br>
+                <h4 id="skillvet-source-code-documentation"> Link to Source Code on GitHub</h4>
+
+                <ul>
+                    <li><a href="https://github.com/jideedu/Scrapping-Alexa-Skills">Scrapping script </a></li>
+                    <li><a href="https://github.com/xfold/AlexaPrivacy">Skillvet Training and Traceability Checking Code</a></li>
+                </ul>
+            </div>
+            <div class="toggle">+ show more</div>
+        </div>
+
+
+        <hr/>
+
+        <div class="section" id="explorethedata">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-2">Explore the Data for the Amazon Alexa Ecosystem</span>
+                    </h2>
+                    <p>
+                        <b>This section presents our characterisation of all Alexa skills across 11 markets over the three snapshots.</b>.
+                    </p>
+
+                    <p>Amazon currently operates 14 separate online marketplaces that cater to a variety of market segments. The United States (US), United Kingdom (UK), India (IN), Australia (AU), Canada (CA), Germany (DE), Japan (JP), Italy (IT), Spain
+                        (ES), France (FR), and Mexico (MX) are among the 11 markets with an online store with third-party skills.</p>
+                    <div class="tohide hidden">
+                        <p>Unlike other platforms like android, Amazon Alexa runs the skills in the cloud, and the code of the skills is not publicly available. To measure the skills ecosystem, we built a Web scrapper utilising selenium with a python framework
+                            that recursively crawls all markets with third-party skills and extracts metadata from the skills. </p>
+                        <p>The web scrapper visits the different skill categories while building a collection of links corresponding to each skill. It then iterates through the collected skill links to visit the skill’s Website.</p>
+                    </div>
+                    <div class="toggle">+ show more</div>
+                    <i>
+                            Click on any of the cards and explore different statistics found in the dataset collected from Amazon Alexa Skill ecosystem.
+                        </i>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-columns">
+
+                        <div class="card">
+                            <a href="#numskills">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number of Skills</h5>
+                                    <p class="card-text">Explore the breakdown of the total number of skills found across Amazon marketplaces. It shows the number of unique skills found across the three years of study arranged by the marketplace. </p>
+                                    <p class="card-text"><small class="text-muted">Click to jump to the section</small></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#numsdevs">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number of Developers</h5>
+                                    <p class="card-text">Explore the breakdown of the total number of developers found across Amazon marketplaces. It shows the number of unique developers found across the three years of study arranged by the marketplace. </p>
+                                    <p class="card-text"><small class="text-muted">Click to jump to the section</small></p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="card">
+                            <a href="#Documentation">
+                                <div class="card-body">
+                                    <h5 class="card-title">Detailed Documentation about Skillvet</h5>
+                                    <p class="card-text">Presents a more detailed explanation of traceability, connected publications, and the tool source code. Here you can learn how to use Skillvet and gain ideas about how it was developed.</p>
+                                    <p class="card-text"><small class="text-muted">Click to jump to the section</small></p>
+                                </div>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr/>
+
+
+        <div id="numskills" class="section">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-3">Explore the Number of Skills</h2>
+                    <p>
+                        <b>This section presents satatistics about the number of skills and developers found across 11 markets over the three snapshots.</b>.
+                    </p>
+                    <p>
+                        Table 1 shows the breakdown of the total number of Alexa skills across Amazon marketplaces. The table shows that more skills were published between 2019 and 2020 (26,940 skills) than between 2020 and 2021 (12,230). Across all years, English-speaking marketplaces
+                        have the largest skills, representing over 80% of the skills.</p>
+                    <div class="tohide hidden">
+                        <p> The Spanish market has the highest increment in the number of skills changing by almost 300%, from 1,286 in 2019 to 5,435 in 2021. Likewise, there is a minor increase in the number of skills published across the English speaking
+                            markets.
+                        </p>
+                    </div>
+                    <div class="toggle">+ show more</div>
+
+
+                    <div class="col-md-7" style="margin-right: 4em; text-align: center;">
+                        <h3>Skills</h3>
+                        <h2><span class="t1"></span></h2>
+                        <table id="table-skill" class="hover row-border cell-border stripe">
+                            <caption>Table 1: Numbers of Skills across 3 years</caption>
+                            <thead>
+                                <tr class="table__header">{% for header in headings %}
+                                    <th class="table__cell">{{header}}</th>{% endfor %}</tr>
+                            </thead>
+                            <tbody>
+                                {% for row in unique_skills %}
+                                <tr class="table__row">{% for cell in row %}
+                                    <td class="table__cell">{{cell}}</td>{% endfor %}</tr>{% endfor %}</tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+	<hr/>
+        <div id="numsdevs" class="section">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-3">Explore the Number of Developers</h2>
+                    <p>
+                        <b>This section presents satatistics about the number of developers found across 11 markets over the three snapshots.</b>.
+                    </p>
+                    <p>We measured the number of developers operating in the ecosystem per marketplace. As shown in Table 2, there are 50,526 developers in 2021. This is an 8% increase from the 46,804 recorded in 2020. Overall, there is a 62% rise in the
+                        number of developers we see from 2019 to 2021. </p>
+                    <div class="tohide hidden">
+                        <p>As we see with the total number of skills during the years, the Spanish marketplace also has the highest increment in developers changing by a similar percentage of 300%. From the table, it can be seen that the highest number of
+                            developers is located within the English-speaking marketplaces.</p>
+                    </div>
+                    <div class="toggle">+ show more</div>
+
+
+                    <div class="col-md-7" style="text-align: center;">
+                        <h3> Developers </h3>
+                        <h2><span class="t2"></span></h2>
+                        <table id="table-dev" class="hover row-border cell-border stripe">
+                            <caption>Table 2: Numbers of Developers across 3 years</caption>
+                            <thead>
+                                <tr class="table__header ">{% for header in headings %}
+                                    <th class="table__cell ">{{header}}</th>{% endfor %}</tr>
+                            </thead>
+                            <tbody>
+                                {% for row in unique_devs %}
+                                <tr class="table__row ">{% for cell in row %}
+                                    <td class="table__cell ">{{cell}}</td>{% endfor %}</tr>{% endfor %}</tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr/>
+
+
+        <div class="section" id="explorethetraceability">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-2">Explore the Traceability for the Alexa Skills</span>
+                    </h2>
+                    <p>
+                        <b>This section explores traceability of Alexa skills that warrant permissions accross the five English-speaking marketplaces over three snapshots.</b>.
+                    </p>
+
+                    <p>We look at privacy policies to understand how developers disclose and justify the data permissions they request. We study the traceability between the data operations and the data actions defined in the privacy policies. We look at
+                        the traceability of skills longitudinally to understand changes across time.</p>
+                    <i>
+                            Click on any of the cards and explore the different statistics found in the dataset related to traceability.
+                        </i>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-columns">
+
+                        <div class="card">
+                            <a href="#skillswithpermission">
+                                <div class="card-body">
+                                    <h5 class="card-title">Detailed Skills with Permission(s)</h5>
+                                    <p class="card-text">Explore skills with permission and their traceability including categories.</p>
+                                    <p class="card-text"><small class="text-muted">Click to jump to the section</small></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="#traceperskillsanddevs">
+                                <div class="card-body">
+                                    <h5 class="card-title">Traceability Per Skills and Developers</h5>
+                                    <p class="card-text"> Explore the distribution of traceabilty per skills and developers across the five English-speaking marketplaces.</p>
+                                    <p class="card-text"><small class="text-muted">Click to jump to the section</small></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="#tracebycat">
+                                <div class="card-body">
+                                    <h5 class="card-title">Traceability by Skill categories</h5>
+                                    <p class="card-text">Present the breakdown using categories to give a more fine-grained perspective of particular skills and as-sociated traceability.</p>
+                                    <p class="card-text"><small class="text-muted">Click to jump to the section</small></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="#tracebyperm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Traceability by permission types</h5>
+                                    <p class="card-text">Explore the traceability based on the type of permission requested by the skills.</p>
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Click to jump to the section</small></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="#Traceability">
+                                <div class="card-body">
+                                    <h5 class="card-title">Check a Skill Traceability</h5>
+                                    <p class="card-text">Study the traceability between data operations evident to users and the data actions defined by developers in the skill policies.</p>
+                                    <p class="card-text"><small class="text-muted">Click to jump to the section</small></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+	<hr/>
+
+        <div id="traceperskillsanddevs" class="section">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-3">Explore the Traceability Per Skills and Developers</h2>
+                    <p>
+                        <b>This section presents the traceability result per skills and developers across 11 markets over the three snapshots.</b>
+                        <p>The chart in Figure 1 shows that developer’s data disclosure practices were poor in 2020 compared to 2019. 35% of developers have skills with broken traceability compare to 51% in 2020. Notwithstanding, traceability improved considerably
+                            in 2021 compared to the previous years.</p>
+                        <div class="tohide hidden">
+                            <p> Similarly, in Figure 2, there are 11% more skills with complete traceability in 2021 than what exist in 2019 and 15% more skills when compared with 2020. On the other hand, the number of skills and developers with complete traceability
+                                decreases in 2020 from what we saw in 2019.</p>
+                            <p> It is apparent from this Table that the number of developers with sound data practices disclosure rose from 55% in 2019 to 57% in 2021. We further give a breakdown of how traceability has changed by category in the following subsection.
+                            </p>
+                        </div>
+                        <div class="toggle">+ show more</div>
+                    </p>
+                    <figure id="traceskillchart" class="chart col-md-6">
+                        <div><embed src={{ skillchartTotaltrace|safe }} /></div>
+                        <figcaption>Fig.1 - Traceability results for English-speaking Markets Skills from 2019-2021</figcaption>
+
+                    </figure>
+                    <figure class="chart col-md-6">
+                        <div><embed src={{ devchartTotaltrace|safe }} /></div>
+                        <figcaption>Fig.2 - Traceability results for English-speaking Markets Developers from 2019-2021</figcaption>
+
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="section" id="tracebycat">
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="col-12">
+                    <h2 class="display-3">Explore the Traceability by Catgories </h2>
+                    <p>
+                        <b>This section presents traceability by catgeory. This can be filter <kbd>by years</kbd></b>.
+                    </p>
+                    <p>We show the breakdown using categories to give a more fine-grained perspective of particular skills and as-sociated traceability. Specifically, we compute the traceability by category in the five English speaking marketplaces. With
+                        this, users can evaluate the different categories based on the number of concerns (broken and partial).</p>
+
+                </div>
+            </div>
+            <div class="row" style="padding-top:10px;">
+                <div class="col-12">
+                    <form method="post" action="/" enctype="multipart/form-data">
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioscat_year" value="2021" checked>
+                            <label class="form-check-label">2021</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioscat_year" value="2020">
+                            <label class="form-check-label">2020</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline3" name="radioscat_year" value="2019">
+                            <label class="form-check-label" for="materialInline2">2019</label>
+                        </div>
+                        <input type="submit" value="Search">
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioscat_trace" value="B">
+                            <label class="form-check-label">Broken</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioscat_trace" value="P">
+                            <label class="form-check-label">Partial</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioscat_trace" value="C" checked>
+                            <label class="form-check-label">Complete</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <figure id="tracebycatfig" class="chart">
+                <div><embed src={{ catskillchart|safe }} /></div>
+                <figcaption>Fig.5 - The distribution of <kbd>{{ trace }}</kbd> traceability <kbd>for {{ requestYear }}</kbd> across the different categories.</figcaption>
+            </figure>
+
+        </div>
+
+
+        <hr/>
+
+        <div class="section" id="tracebyperm">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-3">Explore the Traceability by Type of Permissions</span>
+                    </h2>
+                    <p>
+                        <b>This section explore the traceability based on the type of permission requested by the skills. You can select the year you want using the radio button</b>.
+                    </p>
+
+                    <p>To understand how traceability varies across the different types of permissions over the years, we also look at the traceability of skills per permission requested. Figure 3 shows the distribution of traceability across the different
+                        types of permission for the skills that request permissions that warrant privacy policy in the English-speaking marketplace. </p>
+                    <p> Figure 4 shows the distribution of traceability across the different types of permission for the developers that request permissions that warrant privacy policy in the English-speaking marketplace. Permissions are first grouped into
+                        Broken, Partial, Complete, with respect to the policies of the skills where these permissions are requested.</p>
+                </div>
+            </div>
+            <div class="row" style="padding-top:20px; padding-bottom:10px;">
+                <div class="col-12">
+                    <form method="post" action="/" enctype="multipart/form-data">
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radiosbar_year2" value="2021" checked>
+                            <label class="form-check-label">2021</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radiosbar_year2" value="2020">
+                            <label class="form-check-label">2020</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radiosbar_year2" value="2019">
+                            <label class="form-check-label">2019</label>
+                        </div>
+                        <input type="submit" value="Search">
+                        <br/>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radiosbar_trace" value="B">
+                            <label class="form-check-label">Broken</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radiosbar_trace" value="P">
+                            <label class="form-check-label">Partial</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radiosbar_trace" value="C" checked>
+                            <label class="form-check-label">Complete</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radiosbar_trace" value="R">
+                            <label class="form-check-label">All</label>
+                        </div>
+                    </form>
+                </div>
+
+                <figure id="skillpermchart" class="chart col-md-6">
+                    <div><embed src={{ skillpermchart|safe }} /></div>
+                    <figcaption>Fig.3 - The distribution of <kbd>{{ trace }}</kbd> traceability <kbd>for {{ requestYear }}</kbd> across the different types of permission for the skills.</figcaption>
+                </figure>
+
+                <figure id="devpermchart" class="chart col-md-6">
+                    <div><embed src={{ devpermchart|safe }} /></div>
+                    <figcaption>Fig.4 - The distribution of <kbd>{{ trace }}</kbd> traceability <kbd>for {{ requestYear }}</kbd> across the different types of permission for the developers.</figcaption>
+
+                </figure>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div id="skillswithpermission" class="section">
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-12">
+                    <h2 class="display-3">Explore the Skills With Permissions </h2>
+                    <p>
+                        <b>This section presents skills details and their traceability . This can be filter <kbd>by years</kbd></b>.
+                    </p>
+                    <p>We look at privacy policies to understand how developers disclose the permissions they request. Specifically, we study the traceability between user data operations (recall users need to enable skills requesting permissions) and the
+                        data actions defined by developers in the skill policies.</p>
+                    <p> Note that Amazon’s privacy requirements for skill developers mandate that a skill must come with an adequate privacy policy if it collects personal information. In particular, any collection and use of personal data need to comply
+                        with what is stated in the privacy policy.</p>
+                </div>
+            </div>
+            <div class="row" id = "skillswithpermissionbutton" style="padding-top:20px; padding-bottom:10px;">
+                <div class="col-12">
+                    <form method="post" action="/" enctype="multipart/form-data">
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline1" name="radiosbar_year" value="2021" checked>
+                            <label class="form-check-label">2021</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline3" name="radiosbar_year" value="2020">
+                            <label class="form-check-label">2020</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="materialInline2" name="radiosbar_year" value="2019">
+                            <label class="form-check-label">2019</label>
+                        </div>
+                        <input type="submit" value="Find">
+                    </form>
+                </div>
+            </div>
+            <div class="container" style="width: 100%; overflow: scroll; text-align: center;">
+                <table id="table-allskillstable" class="hover row-border cell-border stripe">
+                    <thead>
+                        <tr>
+                            {% for col in column_names %}
+                            <th>
+                                {{col}}
+                            </th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in row_data %}
+                        <tr>
+                            {% for col, row_ in zip(column_names, row) %}
+                            <td>{{row_}}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <hr/>
+
+        <div class="section" id="Traceability">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-2"> Check a Skill Traceability</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="font-weight-light" style="margin-bottom: 2%;">
+                        You can paste the privacy policy text, upload the privacy file or provide the skill URL.</p>
+                    <div class="dropdown">
+                        <label for="datasetselect">Select your option here >>> </label>
+                        <select id="myselect">
+                            <option value="form_1" selected="selected" > Paste Text</option>
+                            <option value="form_2">Upload File</option>
+                            <option value="form_3">Paste URL </option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <blockquote style="margin-top:15px;font-size: 16px;">
+                                <form name="form_1" id="form_1" style="display:block" method="post" action="/" enctype="multipart/form-data">
+
+                                    <div class="form-group">
+                                        <label for="content"> <strong>Paste the privacy policy text below </strong></label>
+                                        <textarea class="form-control" name='content' id="content" placeholder="privacy policy text goes here" aria-label="content" rows="4" autocapitalize="off" autocomplete="off" spellcheck="false" required></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h4>Select Permissions</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="device_address" name="permission" value="device address">
+                                                <label for="device_address" data-toggle="tooltip" title="Full address is the full street address with city/state/province/county, postal code, and country/region of the customers."> Address </label><br>
+                                                <input type="checkbox" id="location" name="permission" value="location services">
+                                                <label for="location" data-toggle="tooltip" title="Approximate location of a customer location capable Alexa device "> Location</label><br>
+                                                <input type="checkbox" id="full_name" name="permission" value="Full Name">
+                                                <label for="full_name" data-toggle="tooltip" title="Customer's full name"> Full Name </label><br>
+                                                <input type="checkbox" id="first_name" name="permission" value="First Name">
+                                                <label for="first_name" data-toggle="tooltip" title="Customer's first name"> First Name </label><br>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="amazon_pay" name="permission" value="amazon pay">
+                                                <label for="amazon_pay" data-toggle="tooltip" title="Amazon Pay is a service that allows Amazon customers to link the skill to their Amazon accounts and use payment methods and addresses on file with Amazon to pay for their purchases"> Amazon Pay </label><br>
+                                                <input type="checkbox" id="device_country_and_postal_code" name="permission" value="device country and postal code">
+                                                <label for="device_country_and_postal_code" data-toggle="tooltip" title="Device country/region and postal code are only the country/region and postal code associated with the customer's account. "> Postal Code </label><br>
+                                                <input type="checkbox" id="mobile_number" name="permission" value="mobile number">
+                                                <label for="mobile_number" data-toggle="tooltip" title="Customer’s phone number"> Mobile Number </label><br>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="checkbox" id="email_address" name="permission" value="email address">
+                                                <label for="email_address" data-toggle="tooltip" title="Customer email address"> Email Address  </label><br>
+                                                <input type="checkbox" id="list_write_access" name="permission" value="list write access">
+                                                <label for="list_write_access" data-toggle="tooltip" title="Write access to Alexa householdlists"> List Write Access</label><br>
+                                                <input type="checkbox" id="list_read_access" name="permission" value="list read access">
+                                                <label for="list_read_access" data-toggle="tooltip" title="Read access to Alexa householdlists"> List Read Access </label><br>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <a class="text-left">
+                                            <input type="submit" class="btn btn-info" value="Submit" title="click here to submit">
+                                        </a>
+                                    </div>
+                                </form>
+
+
+                                <form name="form_2" id="form_2" style="display:none" method="post" action="/" enctype="multipart/form-data">
+                                    <dl>
+                                        <p>
+                                            <input type="file" name="file" autocomplete="off" required>
+                                        </p>
+                                    </dl>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h4>Select Permissions</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="device_address" name="permission" value="device address">
+                                                <label for="device_address" data-toggle="tooltip" title="Full address is the full street address with city/state/province/county, postal code, and country/region of the customers."> Address </label><br>
+                                                <input type="checkbox" id="location" name="permission" value="location services">
+                                                <label for="location" data-toggle="tooltip" title="Approximate location of a customer location capable Alexa device "> Location</label><br>
+                                                <input type="checkbox" id="full_name" name="permission" value="Full Name">
+                                                <label for="full_name" data-toggle="tooltip" title="Customer's full name"> Full Name </label><br>
+                                                <input type="checkbox" id="first_name" name="permission" value="First Name">
+                                                <label for="first_name" data-toggle="tooltip" title="Customer's first name"> First Name </label><br>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="amazon_pay" name="permission" value="amazon pay">
+                                                <label for="amazon_pay" data-toggle="tooltip" title="Amazon Pay is a service that allows Amazon customers to link the skill to their Amazon accounts and use payment methods and addresses on file with Amazon to pay for their purchases"> Amazon Pay </label><br>
+                                                <input type="checkbox" id="device_country_and_postal_code" name="permission" value="device country and postal code">
+                                                <label for="device_country_and_postal_code" data-toggle="tooltip" title="Device country/region and postal code are only the country/region and postal code associated with the customer's account. "> Postal Code </label><br>
+                                                <input type="checkbox" id="mobile_number" name="permission" value="mobile number">
+                                                <label for="mobile_number" data-toggle="tooltip" title="Customer’s phone number"> Mobile Number </label><br>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="checkbox" id="email_address" name="permission" value="email address">
+                                                <label for="email_address" data-toggle="tooltip" title="Customer email address"> Email Address  </label><br>
+                                                <input type="checkbox" id="list_write_access" name="permission" value="list write access">
+                                                <label for="list_write_access" data-toggle="tooltip" title="Write access to Alexa householdlists"> List Write Access</label><br>
+                                                <input type="checkbox" id="list_read_access" name="permission" value="list read access">
+                                                <label for="list_read_access" data-toggle="tooltip" title="Read access to Alexa householdlists"> List Read Access </label><br>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p class="text-left">
+                                            <input type="submit" name="form-name" class="btn btn-info" value="Submit" title="click here to submit"><br>
+                                        </p>
+                                    </div>
+                                </form>
+
+                                <form name="form_3" id="form_3" style="display:none" method="post" action="/" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="url"><strong>Enter the skill-URL</strong></label>
+                                        <div class="col-sm-12">
+                                            <input type="url" class="form-control" input type="url" name="url" id="url" placeholder="https://www.Alexa-skill-URL.com/" pattern="https://.*" autocapitalize="off" autocomplete="off" spellcheck="false" required>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <p class="text-left">
+                                        <input type="submit" class="btn btn-info" value="Submit" title="click here to submit">
+                                    </p>
+                                </form>
+                                ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                            </blockquote>
+
+                            <div class="col-12 font-weight-light alert alert-warning" style="text-align: center;display: none;">
+                                <h5> By submitting data above, you are agreeing to <strong>sharing of your data with the security community.</strong> Please do not submit any personal information; SkillVet is not responsible for the contents of your submission.
+                                    Also note that the tool works best with a policy text and not with few words.
+                                </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="display: none;" id="Result" class="section">
+            <hr/>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-3"> Result</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <p style="font-size:25px; margin: 20px 10px 10px 10px; "> <strong>Traceability is</strong> {% if typetraceability == 'Partial' %} </p>
+                <a href="#partial">
+                    <h1 class="btn btn-warning " style="color:black; font-size:20px;" data-toggle="tooltip" data-placement="right" title="The transparency of data action defined in the privacy policy document maps partially to the access permissions.">
+                        {{typetraceability}}</h1> <i style="color: yellowgreen; font-size: xx-large;" class="fas fa-exclamation-triangle"></i></a>
+                {% elif typetraceability == 'Complete' %}
+                <a href="#complete">
+                    <h1 class="btn btn-success " style="color:black; font-size:20px;" data-toggle="tooltip" data-placement="right" title="The data action defined in the privacy policy document can be completely mapped to the access data permissions.">
+                        {{typetraceability}}
+                    </h1> <i style="color:green; font-size: xx-large;" class="fas fa-check-circle"></i> </a>{% elif typetraceability == 'Broken' %}
+                <a href="#broken">
+                    <h1 class="btn btn-danger " style="color:black; font-size:20px; " data-toggle="tooltip" data-placement="right" title="There is no data implication in its privacy policy document. The permissions are not traceable to the data practices defined in the privacy document.">
+                        {{typetraceability}}</h1> <i style="color:red;font-size: xx-large;" class="far fa-window-close"></i></a>{% else %}
+                <p></p>{% endif %}
+            </div>
+
+            <form><br>
+                <div class="form-group ">
+                    <label for="permissions_requested "><b>Permission Requested:</b></label>
+                    <!-- <input class="form-control input-lg " id="permissions_requested " type="text " value="{{permissions_requested}} " disabled> -->
+                    <ol>{% for perm in permissions_requested %}
+                        <li>{{perm}}</li> {% endfor %}</ol>
+                </div>
+
+                <div class="form-group ">
+                    <label for="permissions_found "><b>Permission Found:</b></label>
+                    <!-- <input class="form-control input-lg " id="permissions_found " type="text " value="{{permissions_found}} " disabled> -->
+                    <ol>{% if sentence_length !=0 %} {% for perm in permissions_found %}
+                        <li>{{perm}}
+                        </li> {% endfor %}{% endif %} </ol>
+                </div>
+            </form>
+
+            <a href='#data-table'><button onclick=showdetails()>More Details</button></a>
+            <div style="margin-top: 3em; display: none;" id="MoreResultdetails">
+                <div class="row container" style="width: 100%;overflow: scroll;">
+                    <div class="col-12">
+                        <table id="data-table" width="100%" class="hover row-border cell-border stripe" summary="List of sentences in the privacy document and the permissions identify in them by SkillVet">
+                            <caption>Permissions found and the corresponding sentences in the privacy policy</caption>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Permission</th>
+                                    <th>Sentence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% if sentence_length != null %}{% for i in range(0,sentence_length) %}
+                                <tr>
+                                    <th>{{i+1}} </th>
+                                    <td> {{ permissions[i] }}</td>
+                                    <td> {{ sentences[i] }} </td>
+                                </tr>
+                                {% endfor %}{% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="toggle">+ show more</div> -->
+        </div>
+
+    </div>
+</body>
+
+
+<hr/>
+
+
+<footer class="container ">
+    <p>
+        <b>
+                <a href="https://ico.org.uk/about-the-ico/what-we-do/grants-programme/kings-college-london-2/" class="externallink">Evaluating third-party smart home assistant developers</a>
+            </b> is an <a href="https://ico.org.uk " class="externallink ">ICO-funded</a> project running at <a href="https://www.kcl.ac.uk/ " class="externallink ">King’s College London</a>. This project aims to create a tool that will automatically
+        analyse the traceability between the permissions declared by the third-party skills and the data practices stated in their privacy policies.
+    </p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js "></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js "></script>
+<script src="https://cdn.datatables.net/plug-ins/1.10.20/api/fnFindCellRowIndexes.js "></script>
+<script src="https://cdn.datatables.net/scroller/2.0.1/js/dataTables.scroller.min.js "></script>
+<link rel="stylesheet " href="static/css/bootstrap-slider.min.css ">
+<script src="static/js/bootstrap-slider.min.js "></script>
+<script src="static/js/bootstrap-table.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    $("#myselect").on("change", function() {
+        $("#" + $(this).val()).show().siblings().hide();
+    })
+</script>
+
+<script>
+    // This script let the browser remeber radio click and make it available on reload
+    $('input[type="radio"]').click(function() {
+        setActiveBox($(this));
+    });
+
+    function setActiveBox($radioButton) {
+        if (!($radioButton instanceof jQuery)) {
+            $radioButton = $($radioButton);
+        }
+        var value = $radioButton.attr("value");
+        $(".box").hide();
+        $("." + value).show();
+        saveData("activeRadio", value);
+    }
+
+    function saveData(key, value) {
+        localStorage.setItem(key, value) // || (document.cookie = key + "=" + value);
+    }
+
+    function getData(key) {
+        return localStorage.getItem(key) //|| document.cookie.match(new RegExp(key + "\=(.+?)(?=;)"))[1];
+    }
+
+    //check stored radioButton on page load
+    var $radioButton = $("[value=" + getData("activeRadio") + "]");
+    $($radioButton).attr("checked", true);
+    setActiveBox($radioButton);
+</script>
+
+
+{% if scroll %}
+<!-- <script>
+    //auto scroll to a div
+    document.getElementById('{{ scroll }}').style.display = "block ";
+    //document.getElementById('{{ scroll }}').scrollIntoView();
+    // or
+    document.location.hash = '#' + '{{ scroll }}';
+</script> -->
+
+<script>
+    document.getElementById('{{ scroll }}').style.display = "block ";
+    $(document).ready(function() {
+        $('html, body').animate({
+            'scrollTop': $('#' + '{{ scroll }}').offset().top
+        }, 20);
+    });
+</script>
+{% endif %}
+
+</html>
